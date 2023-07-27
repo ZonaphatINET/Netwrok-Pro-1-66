@@ -6,7 +6,7 @@ logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - 
 #Blocking
 def create_blocking(host,ip):
     logging.info('Blocking - creating socket')
-    s = scoket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     logging.info('Blocking - connecting')
     s.connect((host,ip))
