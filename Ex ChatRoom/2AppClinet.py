@@ -1,3 +1,5 @@
+#https://www.thepythoncode.com/article/make-a-chat-room-application-in-python
+
 import socket
 import random
 from threading import Thread
