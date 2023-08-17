@@ -1,6 +1,6 @@
 import paramiko
 
-hostname = "192.168.15.130"   
+hostname = "192.168.66.128"   
 username = "zodoso"
 password = "1234"
 port = 22
@@ -11,10 +11,10 @@ try:
     print("[*] Connected to " + hostname)
     sftp = paramiko.SFTPClient.from_transport(p)
     print("[*] Starting file download")
-    sftp.get("/home/zodoso/test.txt", "/Users/INET USER/Desktop/d.txt")
+    sftp.get("/home/zodoso/test.txt", "C:/Users/USER/Desktop/d.txt")
     print("[*] File downloaded")
     print("[*] Starting file upload")
-    sftp.put("/Users/INET USER/Desktop/d.txt", "/home/zodoso/u.txt")
+    sftp.put("C:/Users/USER/Desktop/d.txt", "/home/zodoso/u.txt")
     print("[*] File uploaded")
     p.close()
     print("[*] Closed connection")
